@@ -16,11 +16,44 @@
   <body>
     <header>
         <div class="container">
-          <div class="row">
-            <div class="col-md-6 col-xs-6">
 
+          <div class="row">
+
+            <div class="col-md-6 col-xs-6">
+                <img src="view/images/Logo.jpg" alt="Logo">
             </div>
+
+            <div class="col-md-6 col-xs-6">
+              <h1>Web developer</h1>
+              <h2><span>Serralheiro</span> Melanie (21years)</h2>
+              <p>(Pony Bleu)</p>
+            </div>
+
           </div>
+          <div class="row">
+            <nav>
+              <ul>
+
+                <div class="col-md-3 col-xs-3">
+                  <li><a href="#">home</a></li>
+                </div>
+
+                <div class="col-md-3 col-xs-3">
+                  <li><a href="#">portfolio</a></li>
+                </div>
+
+                <div class="col-md-3 col-xs-3">
+                  <li><a href="#">contact</a></li>
+                </div>
+
+                <div class="col-md-3 col-xs-3">
+                  <li><a href="#">link</a></li>
+                </div>
+
+              </ul>
+            </nav>
+          </div>
+
         </div>
     </header>
 

@@ -1,0 +1,40 @@
+nav
+{
+  ul
+  {
+    background-color: #080808;
+    height: 2em;
+    li
+    {
+      list-style-type: none;
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 2em;
+      &:active
+      {
+        background-color: #1a1a1a;
+      }
+      &:hover
+      {
+        background-color: #1a1a1a;
+      }
+      a
+      {
+        color: #fff;
+        text-decoration: none;
+        &:hover
+        {
+          text-decoration: none;
+          color: #fff;
+        }
+        &:active
+        {
+          text-decoration: none;
+          color: #fff;
+
+        }
+      }
+
+    }
+  }
+}

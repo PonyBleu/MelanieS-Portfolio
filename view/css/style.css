@@ -1,4 +1,34 @@
 header {
-  background-color: #000; }
+  background-color: #000;
+  color: #fff; }
+  header img {
+    float: right;
+    width: 13em;
+    height: 10em; }
+  header h2 span {
+    text-transform: uppercase; }
+  header p {
+    font-size: 2em; }
+  header nav ul {
+    background-color: #080808;
+    height: 2em; }
+    header nav ul li {
+      list-style-type: none;
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 2em; }
+      header nav ul li:active {
+        background-color: #1a1a1a; }
+      header nav ul li:hover {
+        background-color: #1a1a1a; }
+      header nav ul li a {
+        color: #fff;
+        text-decoration: none; }
+        header nav ul li a:hover {
+          text-decoration: none;
+          color: #fff; }
+        header nav ul li a:active {
+          text-decoration: none;
+          color: #fff; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,4 +1,24 @@
 header
 {
   background-color: #000;
+  color: #fff;
+  img
+  {
+    float: right;
+    width: 13em;
+    height: 10em;
+  }
+  h2
+  {
+    span
+    {
+      text-transform: uppercase;
+    }
+  }
+  p
+  {
+    font-size: 2em;
+  }
+
+  @import "_nav";
 }
