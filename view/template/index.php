@@ -56,11 +56,11 @@
 
         </div>
     </header>
-
-    <?php
-    include ($page);
-    ?>
-
+    <main>
+      <?php
+      include ($page);
+      ?>
+    </main>
     <footer>
 
     </footer>
