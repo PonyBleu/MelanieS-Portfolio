@@ -1,3 +1,7 @@
+<?php
+error_reporting(E_ALL & ~E_NOTICE);
+session_start();
+?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -6,21 +10,25 @@
     <title>Portfolio Melanie</title>
     <meta name="description" content="Portfolio Melanie S.">
 
-    <link rel="stylesheet" type="text/css" href="view/css/style.css">
-    <link rel="stylesheet" type="text/css" href="view/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="<?= WEBROOT ?>view/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="<?= WEBROOT ?>view/css/style.css">
 
     <script src="https://unpkg.com/vue@2.0.3/dist/vue.js"></script>   <!-- CDN vue.js -->
-    <script src="view/js/vue.js"></script>              <!-- lien vue.js -->
+    <script src="<?= WEBROOT ?>view/js/vue.js"></script>              <!-- lien vue.js -->
 
   </head>
   <body>
+    <?php
+      require 'controller/class/Autoloader.php';
+      Autoloader::register();
+     ?>
     <header>
         <div class="container">
 
           <div class="row">
 
             <div class="col-md-6 col-xs-6">
-                <img src="view/images/Logo.jpg" alt="Logo">
+                <img src="<?= WEBROOT ?>view/images/Logo.jpg" alt="Logo">
             </div>
 
             <div class="col-md-6 col-xs-6">
@@ -35,19 +43,19 @@
               <ul>
 
                 <div class="col-md-3 col-xs-3">
-                  <li><a href="#">home</a></li>
+                  <li><a href="<?= WEBROOT ?>home">home</a></li>
                 </div>
 
                 <div class="col-md-3 col-xs-3">
-                  <li><a href="#">portfolio</a></li>
+                  <li><a href="<?= WEBROOT ?>portfolio">portfolio</a></li>
                 </div>
 
                 <div class="col-md-3 col-xs-3">
-                  <li><a href="#">contact</a></li>
+                  <li><a href="<?= WEBROOT ?>contact">contact</a></li>
                 </div>
 
                 <div class="col-md-3 col-xs-3">
-                  <li><a href="#">link</a></li>
+                  <li><a href="<?= WEBROOT ?>link">link</a></li>
                 </div>
 
               </ul>
@@ -56,13 +64,19 @@
 
         </div>
     </header>
+
     <main>
       <?php
       include ($page);
       ?>
     </main>
+
     <footer>
 
     </footer>
+    <?php
+        session_unset();
+        session_destroy();
+    ?>
   </body>
 </html>

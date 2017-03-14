@@ -1,0 +1,45 @@
+.contact
+{
+  height: 57em;
+  h2
+  {
+    text-align: center;
+    color: #fff;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+  form
+  {
+    background-color: #a5a5a5;
+    height: 47em;
+    input
+    {
+      width: 98%;
+      height: 3em;
+      margin-top: 1em;
+      margin-bottom: 1em;
+      margin-left: 0.5em;
+      text-align: center;
+    }
+    .msg
+    {
+      height: 20em;
+      margin-right: 0.5em;
+    }
+    .err
+    {
+        background-color: #570000;
+        width: 97%;
+        height: 18em;
+        color: #fff;
+        p
+        {
+            margin-left: 1em;
+            margin-top: 1em;
+        }
+    }
+
+    @import "_button";
+  }
+
+}
