@@ -1,0 +1,15 @@
+@-webkit-keyframes typing{ from { width: 0; } }
+h3
+{
+    color: #fff;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.5em;
+    font-weight: bold;
+    width: 21ch;
+    white-space: nowrap;
+    overflow: hidden;
+    -webkit-animation: typing 4s steps(14, end), blink-caret .5s step-end infinite alternate;
+    margin-left: 15%;
+    margin-top: 24%;
+    position: absolute;
+}

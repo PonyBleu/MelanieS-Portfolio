@@ -1,5 +1,8 @@
 body {
-  background-color: #1a1a1a; }
+  background-color: #1a1a1a;
+  color: #fff;
+  height: 20em;
+  font-family: 'Coustard', serif; }
 
 header {
   background-color: #000;
@@ -14,16 +17,18 @@ header {
     font-size: 2em; }
   header nav ul {
     background-color: #080808;
-    height: 2em; }
+    height: 2em;
+    margin-bottom: 0em; }
     header nav ul li {
       list-style-type: none;
       text-transform: uppercase;
       text-align: center;
-      font-size: 2em; }
+      font-size: 1.5em; }
       header nav ul li:active {
         background-color: #1a1a1a; }
       header nav ul li:hover {
-        background-color: #1a1a1a; }
+        background-color: #1a1a1a;
+        margin-left: -2em; }
       header nav ul li a {
         color: #fff;
         text-decoration: none; }
@@ -33,6 +38,31 @@ header {
         header nav ul li a:active {
           text-decoration: none;
           color: #fff; }
+
+.home .Bonjour {
+  margin-top: 2em; }
+@-webkit-keyframes typing {
+  from {
+    width: 0; } }
+  .home .Bonjour h3 {
+    color: #fff;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.5em;
+    font-weight: bold;
+    width: 21ch;
+    white-space: nowrap;
+    overflow: hidden;
+    -webkit-animation: typing 4s steps(14, end), blink-caret 0.5s step-end infinite alternate;
+    margin-left: 15%;
+    margin-top: 24%;
+    position: absolute; }
+  .home .Bonjour img {
+    width: 100%;
+    margin-top: 0em; }
+.home .info {
+  background-color: #3f3f3f;
+  margin-top: 2em;
+  width: 100%; }
 
 .contact {
   height: 57em; }
@@ -62,6 +92,10 @@ header {
       .contact form .err p {
         margin-left: 1em;
         margin-top: 1em; }
+      .contact form .err img {
+        width: 25%;
+        height: 7em;
+        float: right; }
     .contact form .button {
       background-color: #6e6e6e;
       color: #000;

@@ -13,6 +13,9 @@ session_start();
     <link rel="stylesheet" type="text/css" href="<?= WEBROOT ?>view/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="<?= WEBROOT ?>view/css/style.css">
 
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Coustard" rel="stylesheet">
+
     <script src="https://unpkg.com/vue@2.0.3/dist/vue.js"></script>   <!-- CDN vue.js -->
     <script src="<?= WEBROOT ?>view/js/vue.js"></script>              <!-- lien vue.js -->
 
@@ -72,7 +75,8 @@ session_start();
     </main>
 
     <footer>
-
+        <button type="button" name="button"><a href="#">CV</a></button>
+        <button type="button" name="button">UP</button>
     </footer>
     <?php
         session_unset();

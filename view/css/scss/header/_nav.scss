@@ -4,12 +4,13 @@ nav
   {
     background-color: #080808;
     height: 2em;
+    margin-bottom: 0em;
     li
     {
       list-style-type: none;
       text-transform: uppercase;
       text-align: center;
-      font-size: 2em;
+      font-size: 1.5em;
       &:active
       {
         background-color: #1a1a1a;
@@ -17,6 +18,7 @@ nav
       &:hover
       {
         background-color: #1a1a1a;
+        margin-left: -2em;
       }
       a
       {

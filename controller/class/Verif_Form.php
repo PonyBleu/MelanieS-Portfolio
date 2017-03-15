@@ -11,15 +11,15 @@ class Verif_Form
     private $err = 0;
 
 
-    public function __construct($nom, $prenom, $mail, $num, $msg, $tab_erreur)
-    {
-      $this->nom = $nom;
-      $this->prenom = $prenom;
-      $this->mail = $mail;
-      $this->num = $num;
-      $this->msg = $msg;
-      $this->tab_erreur = $tab_erreur;
-    }
+    // public function __construct($nom, $prenom, $mail, $num, $msg, $tab_erreur)
+    // {
+    //   $this->nom = $nom;
+    //   $this->prenom = $prenom;
+    //   $this->mail = $mail;
+    //   $this->num = $num;
+    //   $this->msg = $msg;
+    //   $this->tab_erreur = $tab_erreur;
+    // }
 
 
         public function getVerifNom()
@@ -35,6 +35,10 @@ class Verif_Form
                 $this->tab_erreur = "Please fill in this field";
                 $this->err++;
             }
+            else
+                {
+                    $this->err;
+                }
         }
 
 
@@ -51,6 +55,10 @@ class Verif_Form
                 $this->tab_erreur = "Please fill in this field";
                 $this->err++;
             }
+            else
+                {
+                    $this->err;
+                }
         }
 
 
@@ -67,6 +75,10 @@ class Verif_Form
                 $this->tab_erreur = "Please fill in this field";
                 $this->err++;
             }
+            else
+                {
+                    $this->err;
+                }
         }
 
 
@@ -83,6 +95,10 @@ class Verif_Form
                 $this->tab_erreur = "Please fill in this field";
                 $this->err++;
             }
+            else
+                {
+                    $this->err;
+                }
         }
 
 
@@ -99,6 +115,10 @@ class Verif_Form
               $this->tab_erreur = "Please fill in this field";
               $this->err++;
           }
+          else
+              {
+                  $this->err;
+              }
 
         }
 

@@ -13,7 +13,7 @@ require_once('controller/php/form.php');
     $page = "view/pages/home.php";
     $page = "view/pages/portfolio.php";
     $page = "view/pages/contact.php";
-    //$page = "view/pages/link.php";
+    $page = "view/pages/link.php";
 
 
     if (isset($_GET['page'])) {

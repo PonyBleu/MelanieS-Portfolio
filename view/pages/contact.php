@@ -22,6 +22,8 @@
             <div class="col-md-6 col-xs-6">
                 <div class="err">
                     <p><?php echo $_SESSION["err"];?></p>
+                    <img src="<?= WEBROOT ?>view/images/No.png" >
+                    <!-- <img src="<?= WEBROOT ?>view/images/OK.png" > -->
                 </div>
             </div>
 

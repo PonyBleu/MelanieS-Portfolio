@@ -1,27 +1,34 @@
 <?php
 
-require ('controller/class/Verif_Form.php');
+// require ('controller/class/Verif_Form.php');
+//
+//
+// if (isset($_POST['button']))
+// {
+//
+//     $form  = new Verif_Form(array(
+//         $nom = $_POST["nom"],
+//         $prenom = $_POST["prenom"]
+//     ));
 
-$nom = new Verif_Form("nom");
-$prenom = new Verif_Form("prenom");
-$mail = new Verif_Form("mail");
-$num = new Verif_Form("num");
-$msg = new Verif_Form("msg");
+    // echo $nom->getVerifNom();
+    // echo $prenom->getVerifPrenom();
 
-echo $nom->getVerifNom();
-echo $prenom->getVerifPrenom();
+    // var_dump($form);
+    // die();
 
-if (isset($_REQUEST['button']))
-{
-    if($err != 0)
-    {
-        $_SESSION['err'] = "".$tab_erreur."";
-        return false;
-    }
-        else
-        {
-            $_SESSION['err'] = "Your message is sent.";
-        }
-}
+    // $nom = new Verif_Form("nom");
+    // $prenom = new Verif_Form("prenom");
+
+//     if($err != 0)
+//     {
+//         $_SESSION['err'] = "".$tab_erreur."";
+//         return false;
+//     }
+//         else
+//         {
+//             $_SESSION['err'] = "Your message is sent.";
+//         }
+// }
 
  ?>
